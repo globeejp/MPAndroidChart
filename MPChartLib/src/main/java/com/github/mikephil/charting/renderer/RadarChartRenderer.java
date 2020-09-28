@@ -279,6 +279,10 @@ public class RadarChartRenderer extends LineRadarRenderer {
         MPPointF p2out = MPPointF.getInstance(0,0);
         for (int j = 0; j < labelCount; j++) {
 
+            if (j == labelCount - 1) {
+                mWebPaint.setStrokeWidth(mChart.getWebLineWidthOuter());
+            }
+
             for (int i = 0; i < mChart.getData().getEntryCount(); i++) {
 
                 float r = (mChart.getYAxis().mEntries[j] - mChart.getYChartMin()) * factor;

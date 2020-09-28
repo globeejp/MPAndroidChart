@@ -35,6 +35,11 @@ public class RadarChart extends PieRadarChartBase<RadarData> {
     private float mInnerWebLineWidth = 1.5f;
 
     /**
+     * width of the outer most web lines
+     */
+    private float mOuterWebLineWidth = 1.5f;
+
+    /**
      * color for the main web lines
      */
     private int mWebColor = Color.rgb(122, 122, 122);
@@ -238,6 +243,14 @@ public class RadarChart extends PieRadarChartBase<RadarData> {
 
     public float getWebLineWidthInner() {
         return mInnerWebLineWidth;
+    }
+
+    public void setWebLineWidthOuter(float width) {
+        mOuterWebLineWidth = Utils.convertDpToPixel(width);
+    }
+
+    public float getWebLineWidthOuter() {
+        return mOuterWebLineWidth;
     }
 
     /**
