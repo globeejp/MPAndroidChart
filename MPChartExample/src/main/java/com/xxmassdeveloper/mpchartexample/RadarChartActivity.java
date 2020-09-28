@@ -51,6 +51,8 @@ public class RadarChartActivity extends DemoBase {
         chart.setWebLineWidth(1f);
         chart.setWebColor(Color.LTGRAY);
         chart.setWebLineWidthInner(1f);
+        chart.setWebLineWidthOuter(3f);
+        chart.setWebLineColorOuter(Color.BLACK);
         chart.setWebColorInner(Color.LTGRAY);
         chart.setWebAlpha(100);
 

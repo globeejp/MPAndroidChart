@@ -281,6 +281,7 @@ public class RadarChartRenderer extends LineRadarRenderer {
 
             if (j == labelCount - 1) {
                 mWebPaint.setStrokeWidth(mChart.getWebLineWidthOuter());
+                mWebPaint.setColor(mChart.getWebLineColorOuter());
             }
 
             for (int i = 0; i < mChart.getData().getEntryCount(); i++) {
