@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group='com.github.toshi0383'
+group='com.github.globeejp'
 
 android {
     compileSdkVersion 28
